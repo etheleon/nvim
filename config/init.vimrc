@@ -37,8 +37,9 @@ Plug 'vim-airline/vim-airline' " Lean & mean status/tabline for vim that's light
 Plug 'vim-airline/vim-airline-themes' " airline theme...
 
 " colorschemes
-Plug 'dracula/vim' " my favorite
+
 Plug 'ryanoasis/vim-devicons' " look at beauty icons
+Plug 'mhartington/oceanic-next'
 
 " javascript
 Plug 'isRuslan/vim-es6' " Write JavaScript ES6 easily with vim. (You need SnipMate or UltiSnips installed. ??)
@@ -71,7 +72,6 @@ Plug 'wavded/vim-stylus' " for stylus
 " json
 Plug 'elzr/vim-json' " distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly, support in polyglot
 
-Plug 'ryanoasis/vim-devicons'
-Plug 'mhartington/oceanic-next'
+
 
 call plug#end()
