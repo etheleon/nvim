@@ -16,7 +16,7 @@ if (has("termguicolors"))
 endif
 
 " Theme
-colorscheme dracula " OceanicNext
+" colorscheme OceanicNext
 set background=dark
 """"""""""""
 
