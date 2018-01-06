@@ -35,12 +35,12 @@ let g:neomake_error_sign = {
 let g:neomake_open_list = 2
 " let g:neomake_verbose = 3
 
-let b:neomake_javascript_eslint_exe = nrun#Which('eslint') " for find local eslint
-let g:neomake_javascript_enabled_makers = ['eslint']
-if exists(':Neomake')
-  " Check for lint errors on open & write
-  autocmd BufRead,BufWritePost,BufEnter *.js,*.jsx,*.vue silent! Neomake standard|redraw
-endif
+"let b:neomake_javascript_eslint_exe = nrun#Which('eslint') " for find local eslint
+"let g:neomake_javascript_enabled_makers = ['eslint']
+"if exists(':Neomake')
+"  " Check for lint errors on open & write
+"  autocmd BufRead,BufWritePost,BufEnter *.js,*.jsx,*.vue silent! Neomake standard|redraw
+"endif
 
 " make background transparent
 hi Normal ctermbg=NONE
