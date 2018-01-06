@@ -12,7 +12,7 @@ Plug 'ervandew/supertab' " super tab
 Plug 'haya14busa/incsearch.vim' " search example: /salam
 Plug 'honza/vim-snippets' " vim snippets
 Plug 'jaawerth/neomake-local-eslint-first' " for eslint local
-Plug 'kien/ctrlp.vim' " quick look & open file
+Plug 'ctrlpvim/ctrlp.vim' " quick look & open file
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " nerd tree
 Plug 'terryma/vim-multiple-cursors' " Ctrl n multi cursor
 Plug 'sheerun/vim-polyglot' " A collection of language packs for Vim.
