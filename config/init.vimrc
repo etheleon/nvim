@@ -4,7 +4,7 @@ call plug#begin('~/.config/nvim/plugged')
 " :'<,'>sort
 
 " general
-Plug 'Shougo/deoplete.nvim' " dark powered neo-completion
+
 Plug 'SirVer/ultisnips' " completion ~~  UltiSnips is the ultimate solution for snippets in Vim
 Plug 'benekastah/neomake' " asynchronously runs programs job-control functionality
 Plug 'christoomey/vim-tmux-navigator' " navigate from vim to tmux windows
