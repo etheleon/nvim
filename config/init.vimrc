@@ -16,6 +16,7 @@ Plug 'ctrlpvim/ctrlp.vim' " quick look & open file
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " nerd tree
 Plug 'terryma/vim-multiple-cursors' " Ctrl n multi cursor
 Plug 'sheerun/vim-polyglot' " A collection of language packs for Vim.
+Plug 'jpalardy/vim-slime'
 
 " editing
 Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
