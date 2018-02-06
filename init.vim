@@ -28,4 +28,6 @@ endif
 
 " Theme
 syntax enable
-colorscheme OceanicNext
+colorscheme monokai
+"colorscheme dracula
+map <silent> <leader>c <Plug>(IPy-Run)

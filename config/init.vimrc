@@ -73,6 +73,10 @@ Plug 'wavded/vim-stylus' " for stylus
 " json
 Plug 'elzr/vim-json' " distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly, support in polyglot
 
-
+Plug 'jalvesaq/Nvim-R'
+Plug 'crusoexia/vim-monokai'
+Plug 'dracula/vim'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'bfredl/nvim-ipy'
 
 call plug#end()
