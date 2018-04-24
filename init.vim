@@ -26,11 +26,20 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-let g:python_host_prog  = '/usr/bin/python2.7'
-let g:python3_host_prog = '/usr/bin/python3.5'
+let g:python_host_prog  = '/usr/local/bin/python2.7'
+let g:python3_host_prog = '/usr/local/bin/python3.6'
 
 " Theme
 syntax enable
-colorscheme monokai
-"colorscheme dracula
+"colorscheme monokai
+colorscheme dracula
 map <silent> <leader>c <Plug>(IPy-Run)
+
+set autochdir
+set tags=tags;
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
+let g:tagbar_width=26                          " Default is 40, seems too wide
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+

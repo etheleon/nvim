@@ -78,5 +78,6 @@ Plug 'crusoexia/vim-monokai'
 Plug 'dracula/vim'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'bfredl/nvim-ipy'
-
+Plug 'godlygeek/tabular'
+Plug 'majutsushi/tagbar'
 call plug#end()
