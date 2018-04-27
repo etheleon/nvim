@@ -26,8 +26,9 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-let g:python_host_prog  = '/usr/local/bin/python2.7'
-let g:python3_host_prog = '/usr/local/bin/python3.6'
+let g:python_host_prog  = '/anaconda3/envs/airflow/bin/python'
+let g:python3_host_prog = '/anaconda3/bin/python'
+" let g:python3_host_prog = '/usr/local/bin/python3.6'
 
 " Theme
 syntax enable
@@ -42,4 +43,5 @@ let g:tagbar_width=26                          " Default is 40, seems too wide
 nnoremap <silent> <Leader>b :TagbarToggle<CR>
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+let g:syntastic_python_pylint_args = '--disable=C0103'
 

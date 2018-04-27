@@ -3,19 +3,11 @@ filetype plugin indent on
 " deoplete
 
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#disable_auto_complete = 1
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-if !exists('g:deoplete#omni#input_patterns')
-  let g:deoplete#omni#input_patterns = {}
-endif
-
-if system('uname -s') == "Darwin\n"
-  " OSX
-  let g:python3_host_prog = '/usr/local/bin/python3'
-else
-  " Linux
-  let g:python3_host_prog = '/usr/bin/python3'
-endif
+let g:deoplete#disable_auto_complete = 0
+" autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+" if !exists('g:deoplete#omni#input_patterns')
+"   let g:deoplete#omni#input_patterns = {}
+" endif
 
 " neomake config
 autocmd! BufWritePost * Neomake

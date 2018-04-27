@@ -80,4 +80,7 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'bfredl/nvim-ipy'
 Plug 'godlygeek/tabular'
 Plug 'majutsushi/tagbar'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
+
 call plug#end()
