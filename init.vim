@@ -44,4 +44,5 @@ nnoremap <silent> <Leader>b :TagbarToggle<CR>
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 let g:syntastic_python_pylint_args = '--disable=C0103'
+nnoremap <leader>. :CtrlPTag<cr>
 
