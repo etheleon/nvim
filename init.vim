@@ -3,6 +3,8 @@ source $HOME/.config/nvim/config/general.vimrc
 source $HOME/.config/nvim/config/plugins.vimrc
 source $HOME/.config/nvim/config/keys.vimrc
 source $HOME/.config/nvim/config/line.vimrc
+source $HOME/.config/nvim/init.local.vimrc
+
 
 set encoding=utf8
 let g:airline_powerline_fonts = 1
@@ -26,9 +28,6 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-let g:python_host_prog  = '/anaconda3/envs/airflow/bin/python'
-let g:python3_host_prog = '/anaconda3/bin/python'
-" let g:python3_host_prog = '/usr/local/bin/python3.6'
 
 " Theme
 syntax enable
