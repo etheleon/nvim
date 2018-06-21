@@ -31,13 +31,13 @@ endif
 
 " Theme
 syntax enable
-"colorscheme monokai
-colorscheme dracula
+colorscheme monokai
+" colorscheme dracula
 map <silent> <leader>c <Plug>(IPy-Run)
 
 set autochdir
 set tags=tags;
-let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
+let g:tagbar_ctags_bin='/usr/bin/ctags'  " Proper Ctags locations
 let g:tagbar_width=26                          " Default is 40, seems too wide
 nnoremap <silent> <Leader>b :TagbarToggle<CR>
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
@@ -45,3 +45,16 @@ map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 let g:syntastic_python_pylint_args = '--disable=C0103'
 nnoremap <leader>. :CtrlPTag<cr>
 
+
+autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
+autocmd FileType sh,ruby,python   let b:comment_leader = '# '
+autocmd FileType conf,fstab       let b:comment_leader = '# '
+autocmd FileType tex              let b:comment_leader = '% '
+autocmd FileType mail             let b:comment_leader = '> '
+autocmd FileType vim              let b:comment_leader = '" '
+noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
+set timeoutlen=1000 ttimeoutlen=0
+
+au BufRead,BufNewFile *.md set filetype=pandoc
+let g:pandoc#syntax#codeblocks#embeds#langs = ["python", "bash=sh", "r"]
