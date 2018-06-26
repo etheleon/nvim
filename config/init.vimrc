@@ -87,4 +87,5 @@ Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
 
 Plug 'etheleon/vim-java-sql'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'fs111/pydoc.vim'
 call plug#end()
