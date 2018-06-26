@@ -84,4 +84,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
 
+
+Plug 'etheleon/vim-java-sql'
+Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
