@@ -4,7 +4,6 @@ call plug#begin('~/.config/nvim/plugged')
 " :'<,'>sort
 
 " general
-
 Plug 'SirVer/ultisnips' " completion ~~  UltiSnips is the ultimate solution for snippets in Vim
 Plug 'benekastah/neomake' " asynchronously runs programs job-control functionality
 Plug 'christoomey/vim-tmux-navigator' " navigate from vim to tmux windows
@@ -39,6 +38,8 @@ Plug 'vim-airline/vim-airline-themes' " airline theme...
 
 " colorschemes
 
+Plug 'crusoexia/vim-monokai'
+Plug 'dracula/vim' " color
 Plug 'ryanoasis/vim-devicons' " look at beauty icons
 Plug 'mhartington/oceanic-next'
 
@@ -61,6 +62,9 @@ Plug 'kana/vim-textobj-indent' " Text objects for indented blocks of lines, eg. 
 Plug 'kana/vim-textobj-user' " create your own text objects without pain, eg. call textobj#user#plugin('datetime', { ...
 Plug 'wellle/targets.vim' " ci' to (cut in single quote), also support (I l L a A n N) for (In Last last in  .. next Next)
 
+" Markdown
+Plug 'mzlogin/vim-markdown-toc' " provides Table of contents support for markdown (pandoc)
+
 " html
 Plug 'mattn/emmet-vim' " provides support for expanding abbreviations similar to emmet
 Plug 'othree/html5.vim' " HTML5 + inline SVG omnicomplete function, indent and syntax for Vim. Based on the default htmlcomplete.vim, This plugin contributes to vim-polyglot language pack.
@@ -73,19 +77,28 @@ Plug 'wavded/vim-stylus' " for stylus
 " json
 Plug 'elzr/vim-json' " distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly, support in polyglot
 
-Plug 'jalvesaq/Nvim-R'
-Plug 'crusoexia/vim-monokai'
-Plug 'dracula/vim'
-Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'bfredl/nvim-ipy'
-Plug 'godlygeek/tabular'
-Plug 'majutsushi/tagbar'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
-Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
+Plug 'jalvesaq/Nvim-R' " sends code to R
+Plug 'vim-pandoc/vim-pandoc-syntax' " pandoc syntax
+Plug 'bfredl/nvim-ipy' " sends code to ipython
+Plug 'godlygeek/tabular' " aligns
+Plug 'majutsushi/tagbar' " show tags in a tab
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " autocomplete
+Plug 'zchee/deoplete-jedi' " autocomplete
+Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' } " formats python code
 
+" python
+Plug 'etheleon/vim-java-sql' " highlights SQL after
+Plug 'ludovicchabant/vim-gutentags' " live refresh of tags after save
+Plug 'fs111/pydoc.vim' " pydoc
 
-Plug 'etheleon/vim-java-sql'
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'fs111/pydoc.vim'
+" git
+Plug 'rhysd/ghpr-blame.vim'
+Plug 'tpope/vim-fugitive'
+
+"
+Plug 'w0rp/ale'
+Plug 'junegunn/goyo.vim'
+
+Plug 'lifepillar/pgsql.vim'
+Plug 'takac/vim-hardtime'
 call plug#end()
