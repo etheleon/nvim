@@ -27,6 +27,44 @@ nvim ~/.config/nvim/config/init.vimrc
 :PlugInstall <CR>
 ```
 
+## Initial
+
+After installing,
+
+1. Edit `$HOME/.config/nvim/init.local.vimrc`
+2. Add the following line to `init.vim` `source $HOME/.config/nvim/init.local.vimrc`
+
+### Contents of `init.local.vimrc`
+
+These are instructions unique to the install eg. which python interpreter to use
+
+```
+let g:python_host_prog  = '/usr/bin/python'
+let g:python3_host_prog = '/home/uesu/anaconda3/envs/tf18/bin/python'
+" let g:python3_host_prog = '/home/uesu/anaconda3/envs/tensorflow14/bin/python'
+
+nnoremap <silent> ,<space> :%d<CR>
+
+let g:ghpr_github_auth_token = { 'github.com': '<token>'}
+" let g:ghpr_show_pr_mapping
+
+
+" auto highlight current word under cursor
+" {{{
+set updatetime=10 " Short updatetime so the CursorHold event fires fairly often
+
+function! HighlightWordUnderCursor()
+  if getline(".")[col(".")-1] !~# '[[:punct:][:blank:]]'
+    exec 'match' 'Search' '/\V\<'.expand('<cword>').'\>/'
+  else
+    match none
+  endif
+endfunction
+
+autocmd! CursorHold,CursorHoldI * call HighlightWordUnderCursor()
+" }}}
+```
+
 ## Usage docs
 [wiki](https://github.com/hiyali/nvim/wiki)
 
