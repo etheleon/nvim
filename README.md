@@ -65,6 +65,26 @@ autocmd! CursorHold,CursorHoldI * call HighlightWordUnderCursor()
 " }}}
 ```
 
+
+Include coc
+
+```
+CocList extensions  
+```
+
+```
+CocInstall coc-metals
+CocInstall coc-python
+CocInstall coc-jedi
+```
+
+use this to set the intepreter 
+
+```
+CocCommand python.setInterpreter
+```
+
+
 ## Usage docs
 [wiki](https://github.com/hiyali/nvim/wiki)
 
