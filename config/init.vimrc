@@ -82,14 +82,15 @@ Plug 'vim-pandoc/vim-pandoc-syntax' " pandoc syntax
 Plug 'bfredl/nvim-ipy' " sends code to ipython
 Plug 'godlygeek/tabular' " aligns
 Plug 'majutsushi/tagbar' " show tags in a tab
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " autocomplete
-Plug 'zchee/deoplete-jedi' " autocomplete
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " autocomplete
+" Plug 'zchee/deoplete-jedi' " autocomplete
 Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' } " formats python code
 
 " python
 Plug 'etheleon/vim-java-sql' " highlights SQL after
-Plug 'ludovicchabant/vim-gutentags' " live refresh of tags after save
+" Plug 'ludovicchabant/vim-gutentags' " live refresh of tags after save
 Plug 'fs111/pydoc.vim' " pydoc
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " git
 Plug 'rhysd/ghpr-blame.vim'
@@ -101,4 +102,10 @@ Plug 'junegunn/goyo.vim'
 
 Plug 'lifepillar/pgsql.vim'
 Plug 'takac/vim-hardtime'
+Plug 'hkupty/iron.nvim', { 'branch': 'direct-invoke' }
+Plug 'MathSquared/vim-python-sql'
+Plug 'derekwyatt/vim-scala'
+Plug 'junegunn/fzf', { 'dir': '~/opt/fzf' }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
